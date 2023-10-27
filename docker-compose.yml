@@ -1,0 +1,10 @@
+services:
+  web:
+    container_name: next-test
+    # image: nextjs:latest-230818
+    build:
+      context: .
+    restart: always
+    command: npm run dev
+    ports:
+      - "3000:3000"
